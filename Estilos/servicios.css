@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+header {
+    background: green;
+    padding: 5px 0;
+}
+
+#menu-h {
+    max-width: 100%;
+    background: green;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#menu-h nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 1px; /* Reducimos el margen superior */
+}
+
+#menu-h nav ul li {
+    display: inline-block;
+    margin-right: 15px; /* Añadimos un margen derecho para separar los elementos del menú */
+}
+
+#menu-h nav ul li:last-child {
+    margin-right: 0; /* Eliminamos el margen derecho del último elemento */
+}
+
+#menu-h nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px; /* Reducimos el tamaño del texto */
+    padding: 8px 10px; /* Reducimos el relleno */
+}
+
+#menu-h nav ul li a:hover {
+    background-color: darkgreen;
+}
+
+
+
+

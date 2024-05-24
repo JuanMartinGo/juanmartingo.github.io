@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#menu-h {
+    max-width: 100%;
+    min-height: 20px;
+    background: green;
+    margin: 0 auto;
+}
+
+#menu-h ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+#menu-h ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+#menu-h ul li a {
+    color: white;
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    background: green;
+    font-size: 18px;
+}
+
+#menu-h ul li a:hover {
+    background-color: darkgreen;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    background-color: #f5f5f5;
+    color: #333;
+}

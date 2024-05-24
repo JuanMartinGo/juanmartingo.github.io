@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding: 10px;
+    background-color: #f5f5f5;
+    color: #333;
+    text-align: center; /* Centra el contenido en el cuerpo de la página */
+}
+
+/* Estilos para el logo */
+#logo {
+    margin: 0 auto; /* Centra horizontalmente el logo */
+    max-width: 80%; /* Tamaño máximo del logo */
+}
+
+/* Estilos para las líneas de contacto */
+p {
+    margin: 5px 0; /* Espacio entre cada línea de contacto */
+    font-size: 13px; /* Tamaño de fuente */
+}
+header {
+    background-color: #fff; /* Color de fondo para el encabezado */
+    text-align: center; /* Centra el contenido en el encabezado */
+}
+
+#menu-h {
+    max-width: 100%;
+    min-height: 20px;
+    background: green;
+    margin: 0 auto;
+}
+
+#menu-h ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+#menu-h ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+#menu-h ul li a {
+    color: white;
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    background: green;
+    font-size: 18px;
+}
+
+#menu-h ul li a:hover {
+    background-color: darkgreen;
+}
+
+

@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: #fff; /* Color de fondo para el encabezado */
+}
+
+#logo {
+    display: flex;
+    align-items: center;
+}
+
+#logo img {
+    width: 130px; /* Ajusta el tamaño del logo según lo necesites */
+    height: auto; /* Esto mantiene la proporción del logo */
+    margin-right: 10px; /* Espacio entre el logo y el texto */
+}
+
+#logo-text {
+    display: flex;
+    flex-direction: column; /* Alinea el texto en columnas */
+    margin-left: 5px; /* Espacio entre el logo y el texto */
+    line-height: 0.5; /* Ajustar el interlineado entre ambas líneas de texto */
+}
+
+#logo-text .linea1 {
+    font-size: 70px; /* Tamaño de fuente para la línea 1 */
+    font-weight: bold; /* Texto en negrita */
+    color: #0f5729; /* Color del texto para la línea 1 */
+    padding: 10px; /* Ajustar el espaciado interno */
+    border-radius: 5px; /* Añadir bordes redondeados */
+    font-family: 'Times New Roman', sans-serif;
+}
+
+#logo-text .linea2 {
+    font-size: 35px; /* Tamaño de fuente para la línea 2 */
+    color: #306b0a; /* Color del texto para la línea 2 */
+    padding: 10px; /* Ajustar el espaciado interno */
+    border-radius: 5px; /* Añadir bordes redondeados */
+    font-family: 'Montserrat', sans-serif; /* Aplicar la fuente Montserrat */
+}
+
+body{
+    background-color: lightgrey;
+    margin: 0;
+    padding: 0;
+}
+body main section p{
+    text-align: justify;
+}
+
+/* Estilos para el slider */
+#slider {
+    position: relative;
+    background-color: lightgrey;
+    width: 100%; /* Ajusta el ancho del slider según tus necesidades */
+    margin: 0 auto; /* Centra horizontalmente el slider */
+    overflow: hidden;
+}
+
+#slider ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 500%; /* Ajusta el ancho según el número de imágenes */
+    animation: animacionSlider 20s infinite;
+}
+
+#slider ul li {
+    float: left;
+    width: 20%; /* Ajusta según el número de imágenes */
+}
+
+#slider ul li img {
+    width: 100%; /* La imagen ocupará el ancho del contenedor li */
+    height: auto; /* La altura se ajusta automáticamente */
+    max-width: 600px; /* Ancho máximo para la imagen */
+    max-height: 400px; /* Altura máxima para la imagen */
+    display: block; /* Para centrar verticalmente la imagen */
+    margin: 0 auto; /* Para centrar horizontalmente la imagen */
+}
+
+@keyframes animacionSlider {
+    0% {margin-left: 0;}
+    10% {margin-left: 0;}
+    20% {margin-left: -100%;} /* Duración para la primera imagen */
+    30% {margin-left: -100%;} /* Pausa entre la primera y la segunda imagen */
+    40% {margin-left: -200%;} /* Duración para la segunda imagen */
+    50% {margin-left: -200%;} /* Pausa entre la segunda y la tercera imagen */
+    60% {margin-left: -300%;} /* Duración para la tercera imagen */
+    70% {margin-left: -300%;} /* Pausa entre la tercera y la cuarta imagen */
+    80% {margin-left: -400%;} /* Duración para la cuarta imagen */
+    90% {margin-left: -400%;} /* Pausa entre la cuarta y la quinta imagen */
+    100% {margin-left: -400%;} /* Duración para la quinta imagen */
+}
+
+#menu-h {
+    max-width: 100%;
+    min-height: 20px;
+    background: green;
+    margin: 0 auto;
+}
+
+#menu-h ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+#menu-h ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+#menu-h ul li a {
+    color: white;
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    background: green;
+    font-size: 18px;
+}
+
+#menu-h ul li a:hover {
+    background-color: darkgreen;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+section {
+    width: 75%;
+    background-color: #fff;
+    padding: 20px;
+    margin-right: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);}
+section img {
+    max-width: 100%; /* Establecer el ancho máximo al 100% del contenedor */
+    height: auto; /* Altura automática para mantener la proporción */
+    }
+aside {
+    width: 35%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0☺ 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+aside img {
+    max-width: 100%; /* Establecer el ancho máximo al 100% del contenedor */
+    height:auto; /* Altura automática para mantener la proporción */
+}
+
+footer {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;}
+
+
