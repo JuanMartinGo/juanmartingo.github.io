@@ -272,3 +272,48 @@ footer {
         font-size: 15px;
     }
 }
+
+/* Botón hamburguesa (oculto en escritorio) */
+#menu-toggle {
+  display: none;
+  background-color: green;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 18px;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+}
+
+/* Estilos responsivos del menú */
+@media (max-width: 768px) {
+  #menu-toggle {
+    display: block;
+  }
+
+  #menu-items {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: green;
+  }
+
+  #menu-items.show {
+    display: flex;
+  }
+
+  #menu-items li {
+    width: 100%;
+  }
+
+  #menu-items li a {
+    width: 100%;
+    text-align: center;
+    padding: 12px 0;
+    border-top: 1px solid #ffffff55;
+    font-size: 16px;
+  }
+}
+
