@@ -165,4 +165,78 @@ footer {
     padding: 10px 20px;
     text-align: center;}
 
+/* =======================
+   MEDIA QUERIES RESPONSIVAS
+   ======================= */
+@media (max-width: 768px) {
+    /* Ajusta el layout principal */
+    main {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    section, aside {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    /* Logo responsivo */
+    #logo {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    #logo-text .linea1 {
+        font-size: 28px;
+    }
+
+    #logo-text .linea2 {
+        font-size: 18px;
+    }
+
+    /* Menú horizontal en columna */
+    #menu-h ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #menu-h ul li {
+        margin: 5px 0;
+    }
+
+    #menu-h ul li a {
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+
+    /* Slider: redimensionar imágenes */
+    #slider ul li img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Videos y audios responsivos */
+    video, audio {
+        width: 100% !important;
+        height: auto !important;
+    }
+}
+
+@media (max-width: 480px) {
+    #logo-text .linea1 {
+        font-size: 20px;
+    }
+
+    #logo-text .linea2 {
+        font-size: 14px;
+    }
+
+    #menu-h ul li a {
+        font-size: 14px;
+        padding: 6px 12px;
+    }
+}
+
+
 
