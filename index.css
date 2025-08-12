@@ -165,11 +165,9 @@ footer {
     padding: 10px 20px;
     text-align: center;}
 
-/* =======================
-   MEDIA QUERIES RESPONSIVAS
-   ======================= */
+/* Pantallas medianas y móviles (tablets, celulares) */
 @media (max-width: 768px) {
-    /* Ajusta el layout principal */
+    /* Layout principal: vertical */
     main {
         flex-direction: column;
         padding: 10px;
@@ -180,7 +178,7 @@ footer {
         margin: 10px 0;
     }
 
-    /* Logo responsivo */
+    /* Texto del logo */
     #logo {
         flex-direction: column;
         align-items: center;
@@ -188,14 +186,16 @@ footer {
     }
 
     #logo-text .linea1 {
-        font-size: 28px;
+        font-size: 26px;
+        padding: 5px;
     }
 
     #logo-text .linea2 {
         font-size: 18px;
+        padding: 5px;
     }
 
-    /* Menú horizontal en columna */
+    /* Menú horizontal convertido a vertical */
     #menu-h ul {
         flex-direction: column;
         align-items: center;
@@ -208,21 +208,48 @@ footer {
     #menu-h ul li a {
         font-size: 16px;
         padding: 8px 16px;
+        text-align: center;
+        width: 100%;
     }
 
-    /* Slider: redimensionar imágenes */
+    /* Slider e imágenes */
+    #slider ul {
+        width: 500%; /* sigue igual para animación */
+    }
+
+    #slider ul li {
+        width: 20%; /* mantener tamaño relativo */
+    }
+
     #slider ul li img {
         max-width: 100%;
         height: auto;
+        display: block;
     }
 
-    /* Videos y audios responsivos */
+    /* Multimedia adaptativa */
     video, audio {
         width: 100% !important;
         height: auto !important;
     }
+
+    /* Textos más compactos */
+    section h2, aside h2 {
+        font-size: 20px;
+    }
+
+    section p, aside p {
+        font-size: 16px;
+    }
+
+    /* Evita overflow del footer */
+    footer {
+        font-size: 14px;
+        padding: 15px 10px;
+    }
 }
 
+/* Celulares pequeños */
 @media (max-width: 480px) {
     #logo-text .linea1 {
         font-size: 20px;
@@ -236,7 +263,12 @@ footer {
         font-size: 14px;
         padding: 6px 12px;
     }
+
+    section h2 {
+        font-size: 18px;
+    }
+
+    section p {
+        font-size: 15px;
+    }
 }
-
-
-
